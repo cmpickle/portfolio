@@ -2,7 +2,7 @@
   "name": "gh-pages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cmpickle.github.io/gh-pages",
+  "homepage": "https://cameronpickle.com",
   "dependencies": {
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
