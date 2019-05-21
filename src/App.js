@@ -1,28 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
+import { Company } from './company.component';
+import companies from './work.json';
 
-class App extends Component {
-  render() {
+export const AppComponent = ({ classes }) => {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className={classes.app}>
+        <header className={classes.appHeader}>
+          <Typography variant="subtitle1">Hello, I'm</Typography>
+          <Typography variant="h1">Cameron Pickle</Typography>
+          <Typography variant="h4">Here's what I've been up to:</Typography>
+
+          {companies.companies.map(c =>
+            <Company key={c.id} company={c} />)}
         </header>
       </div>
     );
+}
+
+const styles = {
+  appHeader: {
+    backgroundColor: '#282c34',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    fontize: 'calc(10px + 2vmin)',
+    color: 'white'
+  },
+  app: {
+    textAlign: 'center'
   }
 }
 
-export default App;
+export const App = withStyles(styles)(AppComponent);

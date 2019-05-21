@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://cameronpickle.com",
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "jss-grid": "^0.1.11",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"

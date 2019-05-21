@@ -1,0 +1,40 @@
+{
+    "companies": [
+        {
+            "id": 4,
+            "name": "DealerSocket",
+            "image": "assets/images/dealersocket.jpg",
+            "position": "Software Engineer II",
+            "timeline": "April 2018 - Present",
+            "technology": "C#, React, AngularJS, Java, AWS, Kafka, Docker",
+            "description": "I worked closely with the Front End architect to implement React Redux into our main Front End repository. I also helped create the React Redux template for all future front end repositories to implement.\n\nI was picked to be moved to the search team due to my previous successes at the company where I learned Kafka, ElasticSearch, AWS, Docker, and DevOps. I have been involved in setting up the core infrastructure for DealerSocket's core messaging and searching platform."
+        },
+        {
+            "id": 3,
+            "name": "inContact",
+            "image": "assets/images/nice-incontact.png",
+            "position": "Software Engineer II",
+            "timeline": "May 2017 - April 2018",
+            "technology": "C#, AngularJS",
+            "description": "I am a part of the tools team for NICE InContact. I work on tools for our company as well as for our partners who are distributors of our product. I work full stack and build out tools front to back end. I am the product owner of our migration tools to be able to move the data from one of our systems to another. We also create automated testing for all of our products to be able to have a CI/CD environment"
+        },
+        {
+            "id": 2,
+            "name": "Tek Systems",
+            "image": "assets/images/tek-systems.png",
+            "position": "QA Engineer II",
+            "timeline": "February 2017 - May 2017",
+            "technology": "Android, Java",
+            "description": "I work for the LDS church on their missionary department as a Quality Assurance Engineer. I am working on testing their Android application as well as the hosted database that it connects to. We work in an agile environment. I work closely with the developer and we discuss the ways that they implemented the code for user stories to allow for better understanding and testing.\nI have also been working on the development application. With this I am able to learn the best practices of Android development straight from our team of highly skilled developers."
+        },
+        {
+            "id": 1,
+            "name": "Hyland Software",
+            "image": "assets/images/hyland.png",
+            "position": "QA Automation Engineer",
+            "timeline": "May 2015 - February 2017",
+            "technology": "C#, Selenium",
+            "description": "As a QA automation tester I have been working on a automation framework for Hyland's OnBase government Modules. This framework will allow other testers with little to no experience with automation and programming to write automated tests with minimal training. This framework will allow for large automated suites that will be able to perform regression tests in a fraction of the time it would take a manual tester to complete as well as reduce the company's costs in manual testing time that the regression tests would take.\n\nI have also been working as a manual tester for Hyland, specializing in their Media testing. The manual testing includes working with developers to make sure that all requirements are met for our user stories and to reduce/eliminate any bugs in the software. This involves exploratory testing, user driven testing, and edge case testing. With this testing I have learned what the user see and looks for when they are using the software along with the back end expertise of being able to configure the product and resolve issues when they arise. This includes debugging based on error messages, constructing complex SQL queries to fix the database, and working with our team to solve any issues that we or the customer come across."
+        }
+    ]
+}
