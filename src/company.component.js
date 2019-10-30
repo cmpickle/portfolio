@@ -2,7 +2,12 @@ import React from 'react';
 import { Typography, Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
-const CompanyComponent = ({ company, classes }) => (
+const CompanyComponent = (props) => {
+  const {
+    company,
+    classes,
+  } = props;
+  return (
     <Paper className={classes.card}>
       <img src={company.image} alt={company.name} className={classes.circle} />
       <Typography variant="h4" className={classes.content}>{company.name}</Typography>
@@ -10,7 +15,8 @@ const CompanyComponent = ({ company, classes }) => (
       <Typography className={classes.content}>{company.technology}</Typography>
       <Typography className={classes.content}>{company.description}</Typography>
     </Paper>
-);
+  );
+};
 
 const styles = {
     circle: {

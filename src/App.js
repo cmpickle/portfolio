@@ -4,19 +4,20 @@ import { Typography } from '@material-ui/core';
 import { Company } from './company.component';
 import companies from './work.json';
 
-export const AppComponent = ({ classes }) => {
-    return (
-      <div className={classes.app}>
-        <header className={classes.appHeader}>
-          <Typography variant="subtitle1">Hello, I'm</Typography>
-          <Typography variant="h1">Cameron Pickle</Typography>
-          <Typography variant="h4">Here's what I've been up to:</Typography>
+export const AppComponent = (props) => {
+  const { classes } = props;
+  return (
+    <div className={classes.app}>
+      <header className={classes.appHeader}>
+        <Typography variant="subtitle1">Hello, I'm</Typography>
+        <Typography variant="h1">Cameron Pickle</Typography>
+        <Typography variant="h4">Here's what I've been up to:</Typography>
 
-          {companies.companies.map(c =>
-            <Company key={c.id} company={c} />)}
-        </header>
-      </div>
-    );
+        {companies.companies.map(c =>
+          <Company key={c.id} company={c} />)}
+      </header>
+    </div>
+  );
 }
 
 const styles = {
