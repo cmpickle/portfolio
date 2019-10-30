@@ -6,9 +6,20 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "jss-grid": "^0.1.11",
+    "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src -c .eslintrc.js --ext js,jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,6 +40,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "gh-pages": "^2.0.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2"
   }
 }
