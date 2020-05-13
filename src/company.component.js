@@ -9,20 +9,23 @@ const CompanyComponent = (props) => {
   } = props;
   return (
     <Paper className={classes.card}>
-      <img src={company.image} alt={company.name} className={classes.circle} />
-      <Typography variant="h4" className={classes.content}>{company.name}</Typography>
-      <Typography className={classes.content}>{company.position} {company.timeline}</Typography>
-      <Typography className={classes.content}>{company.technology}</Typography>
-      <Typography className={classes.content}>{company.description}</Typography>
+      <div className={classes.imageBackground}>
+        <img src={company.image} alt={company.name} className={classes.image} />
+      </div>
+      <div className={classes.textArea}>
+        <Typography variant="h4" className={classes.content}>{company.name}</Typography>
+        <Typography className={`${classes.content} ${classes.roleStyle}`}>{company.position} {company.timeline}</Typography>
+        <Typography className={classes.content}>{company.technology}</Typography>
+        <Typography className={classes.content}>{company.description}</Typography>
+      </div>
     </Paper>
   );
 };
 
 const styles = {
-    circle: {
+    image: {
         width: '400px',
         height: '200px',
-        borderRadius: '25px',
         objectFit: 'contain',
         backgroundColor: '#FFFFFF'
     },
@@ -30,10 +33,18 @@ const styles = {
         whiteSpace: 'pre-wrap',
         textAlign: 'initial'
     },
+    roleStyle: {
+      color: '#09f'
+    },
     card: {
         margin: '20px',
-        padding: '20px',
-        width: '600px'
+        maxWidth: '1000px'
+    },
+    textArea: {
+      padding: '20px'
+    },
+    imageBackground: {
+      backgroundColor: 'white'
     }
 }
 

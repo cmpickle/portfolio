@@ -13,8 +13,10 @@ export const AppComponent = (props) => {
         <Typography variant="h1">Cameron Pickle</Typography>
         <Typography variant="h4">Here's what I've been up to:</Typography>
 
-        {companies.companies.map(c =>
-          <Company key={c.id} company={c} />)}
+        <div className={classes.list}>
+          {companies.companies.map(c =>
+            <Company key={c.id} company={c} />)}
+        </div>
       </header>
     </div>
   );
@@ -22,7 +24,7 @@ export const AppComponent = (props) => {
 
 const styles = {
   appHeader: {
-    backgroundColor: '#282c34',
+    backgroundColor: '#222',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
@@ -32,6 +34,9 @@ const styles = {
   },
   app: {
     textAlign: 'center'
+  },
+  list: {
+
   }
 }
 

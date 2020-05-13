@@ -1,11 +1,20 @@
 {
     "companies": [
         {
+            "id": 5,
+            "name": "Rakuten",
+            "image": "assets/images/rakuten.png",
+            "position": "Software Engineer",
+            "timeline": "August 2019 - Present",
+            "technology": "Go, React, Vue, GCP, Docker, Kubernetes",
+            "description": ""
+        },
+        {
             "id": 4,
             "name": "DealerSocket",
             "image": "assets/images/dealersocket.jpg",
             "position": "Software Engineer II",
-            "timeline": "April 2018 - Present",
+            "timeline": "April 2018 - August 2019",
             "technology": "C#, React, AngularJS, Java, AWS, Kafka, Docker",
             "description": "I worked closely with the Front End architect to implement React Redux into our main Front End repository. I also helped create the React Redux template for all future front end repositories to implement.\n\nI was picked to be moved to the search team due to my previous successes at the company where I learned Kafka, ElasticSearch, AWS, Docker, and DevOps. I have been involved in setting up the core infrastructure for DealerSocket's core messaging and searching platform."
         },
