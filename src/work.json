@@ -7,7 +7,7 @@
             "position": "Senior Software Engineer",
             "timeline": "August 2019 - Present",
             "technology": "Go, React, Vue, GCP, Docker, Kubernetes, postgres, mysql",
-            "description": "",
+            "description": "I worked on a project during which I was working with React for the front end and Go for the backend. I established processes and patterns for the team to follow that increased our productivity and made our code base more maintainable. I also updated the deploy process and migrated from legacy deploy processes to containerized Kubernetes deployments. \n\nI then began work on a new team where I work with Vue on the front end and Go on the backend. I have led many team initiatives, dissecting the project and creating the technical documentation required for the team to begin work. After this project had two failed attempts by previous teams I was able to get the new team ramped up on the project and deliver the product within the required timeline.",
             "flairs": [
                 {"path": "assets/images/tech/go.png", "alt": "GoLang"},
                 {"path": "assets/images/tech/react.png", "alt":"React"},
