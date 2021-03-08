@@ -34,7 +34,9 @@ const CompanyComponent = (props) => {
         </Typography>
         {company.flairs &&
           company.flairs.map((flair) => (
-            <img className={classes.flair} src={flair.path} alt={flair.alt} />
+            <a href={flair.link} target='_blank' rel='noopener noreferrer'>
+              <img className={classes.flair} src={flair.path} alt={flair.alt} />
+            </a>
           ))}
       </div>
       {children}
