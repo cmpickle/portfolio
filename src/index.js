@@ -3,21 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { App } from './App';
 import * as serviceWorker from './serviceWorker';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 
-const theme = createMuiTheme({
-    typography: {
-      useNextVariants: true,
-    },
+const theme = createTheme({
     palette: {
       type: 'dark',
     },
   });
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
         <App />
-    </MuiThemeProvider>,
+    </ThemeProvider>,
     document.getElementById('root')
 );
 

@@ -33,8 +33,8 @@ const CompanyComponent = (props) => {
           {company.description}
         </Typography>
         {company.flairs &&
-          company.flairs.map((flair) => (
-            <a href={flair.link} target='_blank' rel='noopener noreferrer'>
+          company.flairs.map((flair, i) => (
+            <a key={i} href={flair.link} target='_blank' rel='noopener noreferrer'>
               <img className={classes.flair} src={flair.path} alt={flair.alt} />
             </a>
           ))}
@@ -47,11 +47,11 @@ const CompanyComponent = (props) => {
 const styles = {
   label: {
     color: '#000000',
-    padding: '60px 200px',
+    padding: '60px 0px',
   },
   image: {
-    width: '400px',
-    height: '200px',
+    maxWidth: '90vw',
+    maxHeight: '200px',
     objectFit: 'contain',
     backgroundColor: '#FFFFFF',
   },
