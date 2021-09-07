@@ -1,15 +1,16 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
-import { Company } from './company.component';
+import { Company } from './components/Company';
 import companies from './work.json';
-import { Banner } from './Banner';
 import profile from './assets/images/profile.jpg';
+import { Banner } from './Banner';
+import { Navbar } from './components/Navbar';
 
 export const AppComponent = (props) => {
   const { classes } = props;
   const bannerContent = () => (
-    <React.Fragment>
+    <>
       <img src={profile} className={classes.profileImage} alt='Profile' />
       <Typography color='textPrimary' variant='subtitle1'>Hello, I'm</Typography>
       <Typography color='textPrimary' variant='h1'>Cameron Pickle</Typography>
@@ -63,11 +64,12 @@ export const AppComponent = (props) => {
           <Company key={c.id} company={c} />
         ))}
       </header>
-    </React.Fragment>
+    </>
   );
   return (
     <div className={classes.app}>
       <Banner component={bannerContent}></Banner>
+      <Navbar />
     </div>
   );
 };
