@@ -3,6 +3,7 @@ import { makeStyles, SvgIcon } from '@material-ui/core';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import HomeIcon from '@material-ui/icons/Home';
+import BookIcon from '@material-ui/icons/Book';
 // import PrintingIcon from "@material-ui/icons/Print";
 import { ReactComponent as PrintingIcon } from '../assets/images/3DPrinting/3DPrinting.svg';
 import ProjectsIcon from '@material-ui/icons/FolderSpecial';
@@ -58,7 +59,14 @@ export const Navbar = () => {
           value='/'
           icon={<HomeIcon />}
         />
-        <BottomNavigationAction
+        {/* <BottomNavigationAction
+          label='Blog'
+          classes={{ selected: classes.selected }}
+          className={classes.navIcon}
+          value='/blog'
+          icon={<BookIcon />} */}
+        />
+        {/* <BottomNavigationAction
           label='Projects'
           classes={{ selected: classes.selected }}
           className={classes.navIcon}
@@ -71,7 +79,7 @@ export const Navbar = () => {
           className={classes.navIcon}
           value='/3d-printing'
           icon={<PrintingIcon height={24} width={24} />}
-        />
+        /> */}
       </BottomNavigation>
     </>
   );
