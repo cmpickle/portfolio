@@ -1,17 +1,37 @@
 {
     "companies": [
         {
+            "id": 6,
+            "name": "Gopuff",
+            "image": "assets/images/gopuff.jpg",
+            "position": "Software Engineer",
+            "timeline": "January 2022 - Present",
+            "technology": "Node JS, Typescript, Go, React, Azure, Docker, Kubernetes, postgres, cosmosdb",
+            "description": "I worked on building out the partner integrations between Gopuff and various partner vendors who want access to the Gopuff platfrom.",
+            "flairs": [
+                {"path": "assets/images/tech/nodejs.png", "alt": "Node JS"},
+                {"path": "assets/images/tech/typescript.png", "alt": "Typescript"},
+                {"path": "assets/images/tech/go.png", "alt": "GoLang"},
+                {"path": "assets/images/tech/react.png", "alt":"React"},
+                {"path": "assets/images/tech/azure.png", "alt":"Azure"},
+                {"path": "assets/images/tech/docker.png", "alt":"Docker"},
+                {"path": "assets/images/tech/kubernetes.png", "alt":"Kubernetes"},
+                {"path": "assets/images/tech/postgres.png", "alt":"Postgres"}
+            ]
+        },
+        {
             "id": 5,
             "name": "Rakuten",
             "image": "assets/images/rakuten.png",
             "position": "Senior Software Engineer",
-            "timeline": "August 2019 - Present",
-            "technology": "Go, React, Vue, GCP, Docker, Kubernetes, postgres, mysql",
+            "timeline": "August 2019 - January 2022",
+            "technology": "Go, React, Vue, Typescript, GCP, Docker, Kubernetes, postgres, mysql",
             "description": "I worked on a project during which I was working with React for the front end and Go for the backend. I established processes and patterns for the team to follow that increased our productivity and made our code base more maintainable. I also updated the deploy process and migrated from legacy deploy processes to containerized Kubernetes deployments. \n\nI then began work on a new team where I work with Vue on the front end and Go on the backend. I have led many team initiatives, dissecting the project and creating the technical documentation required for the team to begin work. After this project had two failed attempts by previous teams I was able to get the new team ramped up on the project and deliver the product within the required timeline.",
             "flairs": [
                 {"path": "assets/images/tech/go.png", "alt": "GoLang"},
                 {"path": "assets/images/tech/react.png", "alt":"React"},
                 {"path": "assets/images/tech/vue.png", "alt":"Vue"},
+                {"path": "assets/images/tech/typescript.png", "alt": "Typescript"},
                 {"path": "assets/images/tech/google-cloud-platform.png", "alt":"Google Cloud Platform"},
                 {"path": "assets/images/tech/docker.png", "alt":"Docker"},
                 {"path": "assets/images/tech/kubernetes.png", "alt":"Kubernetes"},
