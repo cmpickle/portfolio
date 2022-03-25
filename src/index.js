@@ -4,7 +4,6 @@ import './index.css';
 import { App } from './App';
 import {
   ThemeProvider,
-  responsiveFontSizes,
   createTheme,
 } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
