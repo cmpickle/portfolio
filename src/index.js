@@ -2,11 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { App } from './App';
-import {
-  ThemeProvider,
-  responsiveFontSizes,
-  createTheme,
-} from '@material-ui/core/styles';
+import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { Projects } from './Projects';

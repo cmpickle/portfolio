@@ -1,6 +1,6 @@
-import React from "react";
-import { Typography, Paper } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { Typography, Paper } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 
 const CompanyComponent = (props) => {
   const { company, classes, children } = props;
@@ -14,13 +14,13 @@ const CompanyComponent = (props) => {
             className={classes.image}
           />
         ) : (
-          <Typography variant="h2" className={classes.label}>
+          <Typography variant='h2' className={classes.label}>
             {company.label}
           </Typography>
         )}
       </div>
       <div className={classes.textArea}>
-        <Typography variant="h4" className={classes.content}>
+        <Typography variant='h4' className={classes.content}>
           {company.name}
         </Typography>
         <Typography className={`${classes.content} ${classes.roleStyle}`}>
@@ -37,8 +37,8 @@ const CompanyComponent = (props) => {
             <a
               key={i}
               href={flair.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img className={classes.flair} src={flair.path} alt={flair.alt} />
             </a>
@@ -51,40 +51,41 @@ const CompanyComponent = (props) => {
 
 const styles = {
   label: {
-    color: "#000000",
-    padding: "60px 0px",
+    color: '#000000',
+    padding: '60px 0px',
   },
   image: {
-    maxWidth: "90vw",
-    maxHeight: "200px",
-    objectFit: "contain",
-    backgroundColor: "#FFFFFF",
+    maxWidth: '90vw',
+    maxHeight: '200px',
+    objectFit: 'contain',
+    backgroundColor: '#FFFFFF',
   },
   content: {
-    whiteSpace: "pre-wrap",
-    textAlign: "initial",
+    whiteSpace: 'pre-wrap',
+    textAlign: 'initial',
   },
   roleStyle: {
-    color: "#09f",
+    color: '#09f',
   },
   card: {
-    margin: "20px",
-    maxWidth: "1000px",
+    margin: '20px',
+    maxWidth: '1000px',
   },
   textArea: {
-    padding: "20px",
+    padding: '20px',
   },
   imageBackground: {
-    backgroundColor: "white",
+    backgroundColor: 'white',
+    padding: '20px',
   },
   flair: {
-    width: "100px",
-    height: "100px",
-    margin: "20px",
-    border: "5px solid #08F",
-    objectFit: "contain",
-    borderRadius: "15%",
-    backgroundColor: "#FFF",
+    width: '100px',
+    height: '100px',
+    margin: '20px',
+    border: '5px solid #08F',
+    objectFit: 'contain',
+    borderRadius: '15%',
+    backgroundColor: '#FFF',
   },
 };
 

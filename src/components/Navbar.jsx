@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { makeStyles, SvgIcon } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import HomeIcon from '@material-ui/icons/Home';
-import BookIcon from '@material-ui/icons/Book';
+// import BookIcon from '@material-ui/icons/Book';
 // import PrintingIcon from "@material-ui/icons/Print";
-import { ReactComponent as PrintingIcon } from '../assets/images/3DPrinting/3DPrinting.svg';
-import ProjectsIcon from '@material-ui/icons/FolderSpecial';
+// import { ReactComponent as PrintingIcon } from '../assets/images/3DPrinting/3DPrinting.svg';
+// import ProjectsIcon from '@material-ui/icons/FolderSpecial';
 import { Redirect, useLocation } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({

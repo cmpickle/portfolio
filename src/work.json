@@ -1,6 +1,25 @@
 {
     "companies": [
         {
+            "id": 100,
+            "name": "Freelancing",
+            "image": "assets/images/harmony_development.png",
+            "position": "Software Engineer",
+            "timeline": "January 2019 - Present",
+            "technology": "Node JS, Typescript, C#, Android, Java, React, Docker, Digital Ocean, Heroku, postgres, MySQL, Wordpress, PHP",
+            "description": "I have built for various clients full dance payment and registration system with CMS for the user facing site and a financial advisor lead generator and distributor system. I have fixed an improved several Wordpress sites. I have also been hired for various bug fixes and small feature requests.",
+            "flairs": [
+                {"path": "assets/images/tech/nodejs.png", "alt": "Node JS"},
+                {"path": "assets/images/tech/typescript.png", "alt": "Typescript"},
+                {"path": "assets/images/tech/csharp.png", "alt": "C#"},
+                {"path": "assets/images/tech/android.png", "alt": "Andriod"},
+                {"path": "assets/images/tech/java.png", "alt":"Java"},
+                {"path": "assets/images/tech/react.png", "alt":"React"},
+                {"path": "assets/images/tech/docker.png", "alt":"Docker"},
+                {"path": "assets/images/tech/postgres.png", "alt":"Postgres"}
+            ]
+        },
+        {
             "id": 6,
             "name": "Gopuff",
             "image": "assets/images/gopuff.jpg",
