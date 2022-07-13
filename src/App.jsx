@@ -11,9 +11,14 @@ export const AppComponent = (props) => {
   const { classes } = props;
   const bannerContent = () => (
     <>
-      <img src={profile} className={classes.profileImage} alt='Profile' />
-      <Typography color='textPrimary' variant='subtitle1'>Hello, I'm</Typography>
-      <Typography color='textPrimary' variant='h1'>Cameron Pickle</Typography>
+      <div className={classes.tile0}>
+        <div className={classes.topSpacer}></div>
+        <div className={classes.badge}>
+          <img src={profile} className={classes.profileImage} alt='Profile' />
+          <Typography color='textPrimary' variant='subtitle1'>Hello, I'm</Typography>
+          <Typography color='textPrimary' variant='h1'>Cameron Pickle</Typography>
+        </div>
+      </div>
       <header className={classes.appHeader}>
         <Company
           key={100}
@@ -64,12 +69,12 @@ export const AppComponent = (props) => {
           <Company key={c.id} company={c} />
         ))}
       </header>
+      <Navbar />
     </>
   );
   return (
     <div className={classes.app}>
       <Banner component={bannerContent}></Banner>
-      <Navbar />
     </div>
   );
 };
@@ -87,10 +92,23 @@ const styles = {
     textAlign: 'center',
   },
   profileImage: {
-    marginTop: '30vh',
     borderRadius: '50%',
     border: '4px solid #09f',
   },
+  tile0: {
+    height: '100vh',
+  },
+  badge: {
+    width: 'fit-content',
+    borderRadius: '1000px',
+    backdropFilter: 'blur(5px) saturate(180%)',
+    backgroundColor: 'rgba(0,153,255,.4)',
+    margin: 'auto',
+    padding: '10px 80px',
+  },
+  topSpacer: {
+    height: '30vh',
+  }
 };
 
 export const App = withStyles(styles)(AppComponent);

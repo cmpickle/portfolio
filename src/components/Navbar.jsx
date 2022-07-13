@@ -16,7 +16,9 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     float: 'left',
     color: '#09f',
-    borderTop: '4px solid #323232',
+    // borderTop: '4px solid #323232',
+    backdropFilter: 'blur(20px) saturate(180%)',
+    backgroundColor: 'rgba(66,66,66,0.7)',
   },
   navIcon: {
     color: 'white',
