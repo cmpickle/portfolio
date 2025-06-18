@@ -5,13 +5,16 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && astro build && touch build/.nojekyll",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
     "type-check": "tsc --noEmit",
     "predeploy": "bun run build",
     "deploy": "gh-pages -d build"
+  },
+  "build": {
+    "output": "build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
