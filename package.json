@@ -5,14 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build && touch build/.nojekyll",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
     "type-check": "tsc --noEmit"
-  },
-  "build": {
-    "output": "build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
