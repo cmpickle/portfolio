@@ -117,10 +117,10 @@ const WorkExperienceCard = ({ job, index }: { job: WorkExperience; index: number
       {/* Timeline dot with pulse animation */}
       <motion.div 
         className="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900 shadow-lg z-10"
+        style={{ position: 'absolute', left: '49.3%' }}
         initial={{ scale: 0 }}
         animate={{ scale: isInView ? 1 : 0 }}
         transition={{ delay: index * 0.1 + 0.3, duration: 0.3 }}
-        whileHover={{ scale: 1.2 }}
       />
       
       {/* Content card */}
