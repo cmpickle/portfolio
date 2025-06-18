@@ -10,7 +10,7 @@
     "astro": "astro",
     "check": "astro check",
     "type-check": "tsc --noEmit",
-    "predeploy": "bun run build",
+    "predeploy": "bun run build && touch build/.nojekyll",
     "deploy": "gh-pages -d build"
   },
   "build": {
