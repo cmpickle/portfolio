@@ -9,9 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
-    "type-check": "tsc --noEmit",
-    "predeploy": "bun run build && touch build/.nojekyll",
-    "deploy": "gh-pages -d build"
+    "type-check": "tsc --noEmit"
   },
   "build": {
     "output": "build"
@@ -30,7 +28,6 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "dotenv": "^16.5.0",
-    "gh-pages": "^6.3.0",
     "typescript": "^5.6.3"
   }
 }
