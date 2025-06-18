@@ -1,0 +1,46 @@
+---
+// src/layouts/Layout.astro
+import type { LayoutProps } from '@/types';
+import '@/styles/global.css';
+
+interface Props extends LayoutProps {}
+
+const { 
+  title, 
+  description = import.meta.env.PUBLIC_SITE_DESCRIPTION || "Your portfolio description",
+  ogImage = "/og-image.jpg",
+  canonicalURL = Astro.url.href
+} = Astro.props;
+
+const siteTitle = title || import.meta.env.PUBLIC_SITE_TITLE || "Your Portfolio";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>{siteTitle}</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
